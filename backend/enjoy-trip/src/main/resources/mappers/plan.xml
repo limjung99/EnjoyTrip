@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.enjoytrip.mapper.PlanMapper">
+	<resultMap type="com.enjoytrip.dto.Trip" id="trip">
+		<result column="content_id" property="tripId" />
+		<result column="content_type_id" property="contentTypeId" />
+		<result column="title" property="title" />
+		<result column="sido_code" property="sidoCode" />
+		<result column="latitude" property="latitude" />
+		<result column="longitude" property="longitude" />
+		<result column="first_image" property="img" />
+	</resultMap>
+	<resultMap type="com.enjoytrip.dto.Plan" id="plan">
+		<result column="user_id" property="userId" />
+		<result column="plan_id" property="planId" />
+		<result column="plan_name" property="planName" />
+
+	</resultMap>
+	
+
+</mapper>
